@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Aceleradora Ágil - HTML/CSS Desafio</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div class="tab tab-1">
+        <h1>Boletim</h1>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>1º Semestre</th>
+              <th>2º Semestre</th>
+              <th>Notal Final</th>
+              <th>Frequência</th>
+              <th>Resultado Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>João Luiz</td>
+              <td>6.5</td>
+              <td>7.8</td>
+              <td>7.2</td>
+              <td>90%</td>
+              <td>---</td>
+            </tr>
+            <tr>
+              <td>Maria Luz</td>
+              <td>8.5</td>
+              <td>8.5</td>
+              <td>8.5</td>
+              <td>55%</td>
+              <td>---</td>
+            </tr>
+            <tr>
+              <td>Fulano Silva</td>
+              <td>6.0</td>
+              <td>4.0</td>
+              <td>5.0</td>
+              <td>97.2%</td>
+              <td>---</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br /><br />
+
+      <div class="tab tab-2">
+        Nome :<input type="text" name="name" id="name" /> 1º Semestre :<input
+          type="number"
+          name="semestre1"
+          id="semestre1"
+        />
+        2º Semestre :<input type="number" name="semestre2" id="semestre2" />
+        Nota Final :<input name="notafinal" id="notafinal" /> Frequência :<input
+          type="text"
+          name="frequencia"
+          id="frequencia"
+        />
+        Resultado Final :<input name="resultado" id="resultado" />
+        <br />
+
+        <div>
+          <button onclick="addHtmlTableRow();" id="adicionar">
+            Adicionar Aluno
+          </button>
+          <button onclick="editHtmlTbleSelectedRow();">Salvar alteração</button>
+          <button onclick="removeSelectedRow();">Excluir</button>
+        </div>
+      </div>
+      <div class="aviso">
+        <h2><u>Avisos:</u></h2>
+        <p>
+          <strong> Cadastrar Novo Aluno: </strong> Preencha os campos e clique
+          em "Adicionar Aluno"
+        </p>
+        <p>
+          <strong> Editar: </strong> Selecione a linha, faça as alterações e
+          clique em "Salvar Alteração"
+        </p>
+        <p>
+          <strong> Excluir: </strong> Selecione a linha e clique em "Excluir"
+        </p>
+      </div>
+    </div>
+
+    <br />
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
